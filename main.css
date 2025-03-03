@@ -34,7 +34,8 @@ img {
 .text {
   text-align: center;
 }
-.text h3 {
+.text h1 {
+  font-size: larger;
 }
 .text p {
   font-size: 15px;
