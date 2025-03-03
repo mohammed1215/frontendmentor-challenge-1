@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "welcome";
+  src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "welcome";
+}
+
+p {
+  font-size: 14px;
+}
+
+main {
+  background-color: var(--Grey-900);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main > section {
+  width: min(500px, 100%);
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: var(--Grey-800);
+  color: var(--White);
+}
+main img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+main h1 {
+  margin-bottom: 20px;
+}
+main h2 {
+  color: var(--Green);
+  margin-bottom: 50px;
+}
+main q {
+  margin-bottom: 30px;
+  display: block;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.links a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: var(--Grey-700);
+  border-radius: 5px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background-color: var(--Green);
+  color: var(--Grey-900);
+}
