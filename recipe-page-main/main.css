@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "custom font";
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "custom font2";
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "custom font2";
+}
+
+body {
+  background-color: #f3e5d8;
+}
+
+main {
+  padding: 30px;
+  width: min(50%, 900px);
+  background-color: var(--White);
+  border-radius: 20px;
+  margin-inline: auto;
+}
+
+main img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+main h1 {
+  color: var(--Stone-900);
+  font-size: clamp(20px, 4vw, 50px);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "custom font";
+}
+
+@media (max-width: 400px) {
+  main > section {
+    padding-inline: 20px;
+  }
+  main {
+    padding: 0;
+    width: 100%;
+  }
+  main > img {
+    border-radius: 0;
+  }
+}
+
+main > p {
+  margin-bottom: 50px;
+  color: var(--Brown-800);
+  font-size: clamp(15px, 5vw, 30px);
+  margin-bottom: 20px;
+}
+
+.Preparation {
+  padding: 30px;
+
+  background-color: var(--Rose-50);
+  border-radius: 10px;
+}
+
+main h3 {
+  color: var(--Rose-800);
+  margin-bottom: 20px;
+}
+main ul {
+}
+
+li {
+  color: var(--Brown-800);
+}
+
+main .Preparation ul li {
+  margin-bottom: 20px;
+  list-style-position: outside;
+
+  margin-left: 20px;
+  padding-left: 10px;
+}
+main .Preparation ul li::marker {
+  color: var(--Rose-800);
+}
+main h2 {
+  color: var(--Brown-800);
+  font-size: xx-large;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+main ul {
+}
+main ul li {
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+main .ingredients ul li::marker {
+  color: var(--Brown-800);
+}
+
+main ol {
+}
+main ol li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+main ol li::marker {
+  color: var(--Brown-800);
+  font-weight: bold;
+}
+.bold {
+  color: var(--Brown-800);
+  font-weight: 900;
+}
+
+.nutrition p {
+  color: var(--Brown-800);
+}
+
+table {
+  width: 100%;
+}
+
+tr td {
+  padding: 10px 20px;
+  color: var(--Brown-800);
+}
+
+tr:not(:last-child) td {
+  border-bottom: 1px solid #ddd;
+}
+
+tr td:nth-child(2) {
+  font-weight: bold;
+}
