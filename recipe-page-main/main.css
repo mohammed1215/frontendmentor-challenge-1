@@ -39,7 +39,7 @@ main {
   width: min(50%, 900px);
   background-color: var(--White);
   border-radius: 20px;
-  margin-inline: auto;
+  margin: 50px auto;
 }
 
 main img {
